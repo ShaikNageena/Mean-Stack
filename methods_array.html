@@ -1,0 +1,30 @@
+// Array Methods
+
+<html>
+<body>
+<h2 id="sort"></h2>
+<h2 id="join"></h2>
+<h2 id="push"></h2>
+<h2 id="pop"></h2>
+<h2 id="shift"></h2>
+<h2 id="unshift"></h2>
+<h2 id="concat"></h2>
+<script>
+const name=["10","5","25","12"];
+document.getElementById("sort").innerHTML=name.sort();
+document.getElementById("join").innerHTML=name.join("*");
+name.push("20");
+document.getElementById("push").innerHTML=name;
+name.pop();
+document.getElementById("pop").innerHTML=name;
+name.shift();
+document.getElementById("shift").innerHTML=name;
+name.unshift("60"); 
+document.getElementById("unshift").innerHTML=name;
+name1=["5","6","7"];
+name2=["nageena","naina"];
+concat=name1.concat(name2);
+document.getElementById("concat").innerHTML=concat;
+</script>
+</body>
+</html>
