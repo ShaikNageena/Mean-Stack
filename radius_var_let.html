@@ -1,0 +1,19 @@
+//Write a JavaScript program to find the area of a circle using radius (var and let reassign and observe the difference with var and let) and PI (const)
+
+<html>
+<head>
+<script>
+const PI=3.14;
+var r=parseInt(window.prompt("enter the radius"));
+document.write("<h2 style='color:red'>");
+document.write("radius is:"+r);
+document.write("<br>");
+var r=parseInt(window.prompt("enter the radius"));
+document.write("after redeclartion radius is:"+r);
+document.write("<h2 style='color:blue'>");
+result=PI*r*r;
+document.write("<h2 style='color:green'>");
+document.write("area by using radius as"+" "+r+" "+"is:"+result);
+</script>
+</head>
+</html>

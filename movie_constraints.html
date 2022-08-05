@@ -1,0 +1,40 @@
+/*Write a JavaScript code to book movie tickets online and calculate the total price based on the 3 conditions: 
+(a) If seats to be booked are not more than 2, the cost per ticket remains Rs. 150. 
+(b) If seats are 6 or more, booking is not allowed. 
+(c) If seats are 3 or 4 or 5 then make 10% discount.
+*/
+<html>
+<head>
+<script>
+var no_of_tickets;
+var cost=150;
+var total_cost=0;
+no_of_tickets=window.prompt("enter no.of.tickets:");
+document.write("<h3 style='color:red'>");
+document.write("No_Of_Tickets is:"+no_of_tickets);
+document.write("<br>");
+if(no_of_tickets>=6||no_of_tickets<=0)
+{
+alert("booking is not possible");
+}
+else if(no_of_tickets>=1 && no_of_tickets<=2)
+{
+total_cost=no_of_tickets*cost;
+document.write("<h3 style='color:green'>");
+document.write("total cost is:"+total_cost);
+document.write("<br>");
+}
+else{
+total_cost=no_of_tickets*cost;
+discount=total_cost*(10/100);
+document.write("<h3 style='color:blue'>");
+document.write("discount is:"+discount);
+document.write("<br>");
+document.write("<h3 style='color:purple'>");
+document.write("after discount the price is:");
+total=total_cost-discount;
+document.write(total);
+}
+</script>
+</head>
+</html>
