@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+str = "Computer Science and Engineering";
+//slice() extracts a part of a string and returns the extracted part in a new string.
+result = str.slice(0,4);
+document.write("<font color='green'>");
+document.write("String after Slice(0,4) is:"+result);
+document.write("</font>");
+document.write("<br>");
+//If a parameter is negative, the position is counted from the end of the string.
+document.write("<font color='red'>");
+document.write("String after Slice(-12,-6) is:"+str.slice(-12, -6));
+document.write("</font>");
+document.write("<br>");
+//If you omit the second parameter, the method will slice out the rest of the string:
+document.write("<font color='purple'>");
+ document.write("String after Slice(7) is:"+str.slice(7));
+document.write("</font>");
+document.write("<br>");
+//substring() is similar to slice().
+//The difference is that start and end values less than 0 are treated as 0 in substring().
+document.write("<font color='orange'>");
+document.write("String after applying substring(7,13) is:"+str.substring(7, 13));
+document.write("</font>");
+document.write("<br>");
+//substr() is similar to slice().
+//The difference is that the second parameter specifies the length of the extracted part.
+document.write("<font color='blue'>");
+document.write("String after applying substr(7,6) is:"+str.substr(7, 6));
+document.write("</font>");
+</script>
+</head>
+</html>
+
