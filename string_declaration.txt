@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+// String declaration and initialization.
+var myString = "This is a string";
+document.write("<font color='green'>");
+document.write(myString);
+document.write("</font>");
+document.write("<br>");
+// Second Way for String declaration and initialization.
+var myString = new String();
+myString = "Computer Science and Engineering";
+document.write("<font color='red'>");
+document.write(myString);
+document.write("</font>");
+document.write("<br>");
+// Third Way for String declaration and initialization.
+var myString = new String ("Mean Stack Lab");
+document.write("<font color='purple'>");
+document.write(myString);
+document.write("</font>");
+document.write("<br>");
+</script>
+</head>
+</html>
