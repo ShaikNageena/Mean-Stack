@@ -1,0 +1,42 @@
+<html>
+<head>
+<script>
+days=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+// creation of date object
+var d=new Date();
+document.write("<font color='green'>");
+document.write(d);
+document.write("</font>");
+var day=d.getDay(); // returns value from 0 to 6 based on day
+document.write("<br><font color='red'>");
+document.write("Day is "+day+" "+days[day]);
+document.write("</font>");
+document.write("<br>");
+document.write("<font color='purple'>");
+document.write(d.getFullYear());
+document.write("</font>");
+document.write("<br>");
+month=d.getMonth();
+document.write("<br><font color='orange'>");
+document.write(month);
+document.write("</font>");
+document.write("<br>");
+document.write("<br><font color='blue'>");
+document.write(d.getHours());
+document.write("</font>");
+document.write("<br>");
+document.write("<br><font color='red'>");
+document.write(d.getMinutes());
+document.write("</font>");
+document.write("<br>");
+document.write("<br><font color='skyblue'>");
+document.write(d.getSeconds ());
+document.write("</font>");
+document.write("<br>");
+document.write("<br><font color='grey'>");
+document.write(d.getTime ());// returns time in the format of milliseconds.
+document.write("</font>");
+document.write("<br>");
+</script>
+</head>
+</html>
