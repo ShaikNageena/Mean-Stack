@@ -1,0 +1,12 @@
+//asynchronous usage by parameterized functions 
+<html>
+<script>
+function f1(x,y)
+{
+document.write(x+y);
+document.write("<br>");
+}
+setTimeout(f1,2000,66,89);// only once it will be printed
+setInterval(f1,3000,87,90);//repetition of this statement will be executed.
+</script>
+</html>
