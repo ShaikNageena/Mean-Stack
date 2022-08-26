@@ -1,0 +1,18 @@
+// override of the functions using same id
+<html>
+<body>
+<h2 id="demo"></h2>
+<h1 id="d"></h1>
+<script>
+function f1(x,y)
+{
+document.getElementById("d").innerHTML=x+y;
+}
+function f2(x,y){
+document.getElementById("demo").innerHTML=x+y;
+}
+f1(10,20);
+f2(11,11);
+</script>
+</body>
+</html>
