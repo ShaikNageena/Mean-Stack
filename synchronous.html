@@ -1,0 +1,29 @@
+// create any three user defined functions and call them using synchronous approach(regular)
+<html>
+<script>
+var i;
+function f1()
+{
+document.write("<h2 style='color:green'>");
+for(i=0;i<50;i++){
+document.write(i+" ");
+document.write("<br>");
+}
+}
+
+function f2(){
+document.write("<h2 style='color:red'>");
+document.write("Printing f2 function");
+document.write("<br>");
+}
+function f3(){
+document.write("<h2 style='color:cyan'>");
+document.write("Printing f3 function");
+}
+// Using synchronous approach
+// executing the functions in a sequential order
+f1();
+f2();
+f3();
+</script>
+</html>
