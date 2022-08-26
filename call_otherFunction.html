@@ -1,0 +1,19 @@
+<html>
+<body>
+<h2 id="demo"></h2>
+<script>
+function add(x,y,callback){
+document.write("Hello");
+callback();
+}
+function f3(){
+var d=new Date();
+m=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+document.getElementById("demo").innerHTML=m;
+}
+setTimeout(f3,3000);
+// call the call() function
+add(5,7,f3);
+</script>
+</body>
+</html>
