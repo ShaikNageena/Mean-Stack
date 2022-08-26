@@ -1,0 +1,31 @@
+// create any three user defined functions and call them using asynchronous-callback
+//Hint:use 
+//2.setInterval(function_name,time_milliseconds)
+
+<html>
+<script>
+var i;
+function f1()
+{
+document.write("<h2 style='color:green'>");
+for(i=0;i<50;i++){
+document.write(i+" ");
+}
+}
+
+function f2(){
+document.write("<h2 style='color:red'>");
+document.write("Printing f2 function");
+document.write("<br>");
+}
+function f3(){
+document.write("<h2 style='color:cyan'>");
+document.write("Printing f3 function");
+}
+// Using asynchronous approach
+// executing the functions in a sequential order
+setInterval(f1,3000);
+f2();
+f3();
+</script>
+</html>
