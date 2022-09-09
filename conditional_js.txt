@@ -1,0 +1,11 @@
+// Working on conditional statements
+
+const prompt = require('prompt-sync')();
+const a=Number(prompt("enter a value"));
+const b=Number(prompt("enter b value"));
+if(a>b){
+	console.log("a is greater");
+}
+else{
+	console.log("b is greater");
+}
