@@ -1,0 +1,11 @@
+//using fucntions to print even numbers in a range
+
+function even_no(no)
+{
+for(i=1;i<=no;i++){
+if(i%2==0)
+console.log("%d is even",i);
+}
+}
+even_no(12);
+
