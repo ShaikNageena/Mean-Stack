@@ -1,0 +1,13 @@
+// printing even numbers in a given range by using functions and taking input from user 
+console.log("enter the values of a and b");
+const prompt = require('prompt-sync')();
+const a=Number(prompt("enter a value"));
+const b=Number(prompt("enter b value"));
+function even_no(a,b)
+{
+for(i=a;i<=b;i++){
+if(i%2==0)
+console.log("%d is even",i);
+}
+}
+even_no(a,b);
