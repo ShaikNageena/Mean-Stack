@@ -1,0 +1,8 @@
+//Working on how to run java script on the server side.
+
+console.log("hello!cse-c"); //to print on the console i.e on the node js command prompt
+a=10
+b=20
+c=a+b
+console.log("a+b is %d",c);
+console.log("Sum is:"+c);
