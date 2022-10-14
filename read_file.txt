@@ -1,0 +1,10 @@
+//READING CONTENTS ROM THE FILE:
+
+const fs = require('fs');
+fs.readFile('C:/Users/TEMP/Documents/first_read.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(data);
+});
