@@ -1,0 +1,25 @@
+// Appending contents to the file
+// if there is no file to append it creates a new file
+/*const fs = require('fs');
+
+const content = 'Appending!';
+fs.appendFile('C:/Users/TEMP/Documents/append.txt', content, err => {
+  if (err) {
+    console.error(err);
+	}
+	else{
+	console.log("Successfully written");
+	}
+});
+
+
+// to check whether the contents have been appended or not
+
+const fs = require('fs');
+fs.readFile('C:/Users/TEMP/Documents/append.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(data);
+});
