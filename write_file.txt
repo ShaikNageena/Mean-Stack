@@ -1,0 +1,28 @@
+//WRITING INTO THE FILE
+
+
+/*
+const fs = require('fs');
+
+const content = 'Writing contents to the file!';
+fs.writeFile('C:/Users/TEMP/Documents/first_write.txt', content, err => {
+  if (err) {
+    console.error(err);
+	}
+	else{
+	console.log("Successfully written");
+	}
+});
+
+
+
+// To know whether the file has been written or not use readFile method
+
+const fs = require('fs');
+fs.readFile('C:/Users/TEMP/Documents/first_write.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(data);
+});
